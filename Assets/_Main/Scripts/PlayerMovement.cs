@@ -2,13 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MovableActor
 {
-    [SerializeField] private float speed;
     private float xMovement;
     private float yMovement;
-
-    private Rigidbody body;
 
     // Start is called before the first frame update
     void Start()
@@ -23,10 +20,5 @@ public class PlayerMovement : MonoBehaviour
         yMovement = Input.GetAxisRaw("Vertical");
 
         Move(new Vector3(xMovement, 0.0f, yMovement));
-    }
-
-    void Move(Vector3 direction)
-    {
-        body.velocity = direction * speed;
     }
 }
