@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovableActor : MonoBehaviour
+public abstract class MovableActor : MonoBehaviour
 {
     protected Rigidbody body;
-    public float speed;
+    [SerializeField] public float speed;
 
     // Start is called before the first frame update
     void Start()
