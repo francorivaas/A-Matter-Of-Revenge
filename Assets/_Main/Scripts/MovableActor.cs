@@ -13,12 +13,6 @@ public abstract class MovableActor : MonoBehaviour
         body = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     protected void Move(Vector3 direction)
     {
         body.velocity = direction * speed;
