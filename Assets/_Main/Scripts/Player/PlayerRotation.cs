@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerRotation : RotateActor
+public class PlayerRotation : RotableActor
 {
     [SerializeField] private LayerMask _raycastLayerMask;
 
