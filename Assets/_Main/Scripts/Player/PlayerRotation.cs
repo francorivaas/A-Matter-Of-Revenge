@@ -11,7 +11,6 @@ public class PlayerRotation : RotableActor
     private void Start()
     {
         _mainCamera = Camera.main;
-        print(_mainCamera.farClipPlane);
     }
 
     private void Update()
