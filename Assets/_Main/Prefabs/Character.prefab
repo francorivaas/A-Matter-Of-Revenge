@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5605497144411480664}
+  - component: {fileID: 5785262405767159714}
   m_Layer: 0
   m_Name: 'Gun '
   m_TagString: Untagged
@@ -30,6 +31,18 @@ Transform:
   m_Father: {fileID: 7282070434377248016}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5785262405767159714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531140071769081367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aa607c3f38d7464d89e3a560b9fb246, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &608735296834251196
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,6 +133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3242574279515823255}
+  - component: {fileID: 228850759048155410}
   m_Layer: 0
   m_Name: Spear
   m_TagString: Untagged
@@ -141,6 +155,18 @@ Transform:
   m_Father: {fileID: 7282070434377248016}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &228850759048155410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2491915739873874623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b94b186b5c21f27468a50401ee9b2745, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3738105932996063150
 GameObject:
   m_ObjectHideFlags: 0
@@ -150,7 +176,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7282070434377248016}
-  - component: {fileID: 6447008740577841232}
+  - component: {fileID: 5509237334730065497}
   m_Layer: 0
   m_Name: Weapon Holder
   m_TagString: Untagged
@@ -175,7 +201,7 @@ Transform:
   m_Father: {fileID: 4734701836109065235}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6447008740577841232
+--- !u!114 &5509237334730065497
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -197,6 +223,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7042740855317079308}
+  - component: {fileID: 1876362867309525693}
   m_Layer: 0
   m_Name: MachineGun
   m_TagString: Untagged
@@ -218,6 +245,18 @@ Transform:
   m_Father: {fileID: 7282070434377248016}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1876362867309525693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3757188167321946419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 094cf1eefc3c85f41ab6117d400d399b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4734701836109065263
 GameObject:
   m_ObjectHideFlags: 0
