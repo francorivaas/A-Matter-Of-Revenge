@@ -7,16 +7,12 @@ public class MachineGun : WeaponActor
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
-    void Update()
+    public override void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
-        {
-            Attack();
-        }
+        base.Update();
     }
 
     public override void Attack()

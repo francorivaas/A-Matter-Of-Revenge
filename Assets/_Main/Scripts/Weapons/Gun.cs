@@ -15,18 +15,15 @@ public class Gun : WeaponActor
     }
 
     // Update is called once per frame
-    void Update()
+    public override void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
-        {
-            Attack();
-        }
+        base.Update();
     }
 
     public override void Attack()
     {
         base.Attack();
-
+        print("hola");
         RaycastHit hit;
         if (Physics.Raycast(firePoint.transform.position, firePoint.transform.forward, out hit, shootRange))
         {

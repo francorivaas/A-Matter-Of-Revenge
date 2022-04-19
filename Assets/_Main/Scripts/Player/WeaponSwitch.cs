@@ -78,12 +78,8 @@ public class WeaponSwitch : MonoBehaviour
             else 
                 weapon.gameObject.SetActive(false);
 
-            i++;
-
-            
+            i++;          
         }
-
-        print(weaponSelected);
     }
 }
 
