@@ -9,13 +9,15 @@ public class Gun : WeaponActor
     private Transform firePoint;
 
     // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
+        base.Start();
+        
         firePoint = GetComponentInChildren<Transform>();
     }
 
     // Update is called once per frame
-    public override void Update()
+    protected override void Update()
     {
         base.Update();
     }
@@ -23,7 +25,7 @@ public class Gun : WeaponActor
     public override void Attack()
     {
         base.Attack();
-        print("hola");
+
         RaycastHit hit;
         if (Physics.Raycast(firePoint.transform.position, firePoint.transform.forward, out hit, shootRange))
         {

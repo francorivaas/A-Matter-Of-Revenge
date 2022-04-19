@@ -4,12 +4,13 @@ using UnityEngine;
 
 public abstract class WeaponActor : MonoBehaviour, IWeapon
 {
-    public virtual void Update()
+    protected virtual void Start()
     {
-        if (Input.GetMouseButton(0))
-        {
-            Attack();
-        }
+    }
+
+    protected virtual void Update()
+    {
+        if (Input.GetMouseButton(0)) Attack();
     }
 
     public virtual void Attack()
