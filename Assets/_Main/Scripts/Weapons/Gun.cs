@@ -5,6 +5,7 @@ using UnityEngine;
 public class Gun : WeaponActor
 {
     [SerializeField] private float shootRange;
+    [SerializeField] private float gunDamage;
 
     private Transform firePoint;
 
@@ -27,9 +28,21 @@ public class Gun : WeaponActor
         base.Attack();
 
         RaycastHit hit;
+
         if (Physics.Raycast(firePoint.transform.position, firePoint.transform.forward, out hit, shootRange))
         {
-            print(hit.transform.name);
+            #region Get Actor Data
+            
+            HealthController actorHealth = hit.transform.GetComponent<HealthController>();
+            GameObject actorLayerObj = hit.transform.gameObject;
+            
+            #endregion Get Actor Data
+
+            if (actorHealth != null && actorLayerObj.layer == LayerMask.NameToLayer("Enemy"))
+            {
+                actorHealth.TakeDamage(gunDamage);
+                Debug.Log($"La vida de {actorHealth.name} es de {actorHealth.CurrentHealth}");
+            }
         }
     }
 }

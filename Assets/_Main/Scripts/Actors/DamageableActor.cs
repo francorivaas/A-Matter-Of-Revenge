@@ -10,6 +10,8 @@ public abstract class DamageableActor : MonoBehaviour, IDamageable
     [SerializeField]
     protected float currentHealth;
 
+    public float CurrentHealth { get => currentHealth; }
+
     // Start is called before the first frame update
     void Start()
     {
