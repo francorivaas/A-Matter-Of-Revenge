@@ -4,16 +4,37 @@ using UnityEngine;
 
 public abstract class WeaponActor : MonoBehaviour, IWeapon
 {
+    protected bool canAttack;
+
+    [SerializeField] protected float cooldown = 1.0f;
+
     protected virtual void Start()
     {
+        canAttack = true;
     }
 
     protected virtual void Update()
     {
-        if (Input.GetMouseButton(0)) Attack();
+        CheckInputs();
+    }
+
+    private void CheckInputs()
+    {
+        if (Input.GetMouseButton(0) && canAttack)
+        {
+            canAttack = false;
+            Attack();
+            StartCoroutine(Cooldown(cooldown));
+        }
     }
 
     public virtual void Attack()
     {
+    }
+
+    IEnumerator Cooldown (float time)
+    {
+        yield return new WaitForSeconds(time);
+        canAttack = true;
     }
 }
