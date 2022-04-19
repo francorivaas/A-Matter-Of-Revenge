@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aa607c3f38d7464d89e3a560b9fb246, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cooldown: 1
   shootRange: 100
 --- !u!1 &608735296834251196
 GameObject:
@@ -169,6 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b94b186b5c21f27468a50401ee9b2745, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cooldown: 1
 --- !u!1 &3738105932996063150
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,6 +261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 094cf1eefc3c85f41ab6117d400d399b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cooldown: 1
 --- !u!1 &4734701836109065263
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,6 +275,7 @@ GameObject:
   - component: {fileID: 4734701836109065260}
   - component: {fileID: 4734701836109065232}
   - component: {fileID: 588050632437197264}
+  - component: {fileID: 2390746893053065416}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -355,6 +359,20 @@ MonoBehaviour:
   _raycastLayerMask:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &2390746893053065416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4734701836109065263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 326ef6d78965375408b56c2dec52b387, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
 --- !u!1 &4734701837456666670
 GameObject:
   m_ObjectHideFlags: 0
