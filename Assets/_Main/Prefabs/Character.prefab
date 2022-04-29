@@ -45,9 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aa607c3f38d7464d89e3a560b9fb246, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponDamage: 50
   cooldown: 1
   shootRange: 100
-  gunDamage: 10
 --- !u!1 &608735296834251196
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,8 +268,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b94b186b5c21f27468a50401ee9b2745, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponDamage: 10
   cooldown: 0.5
-  spearDamage: 10
   damageArea: {fileID: 4068204809029510643}
 --- !u!1 &3738105932996063150
 GameObject:
@@ -362,6 +362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 094cf1eefc3c85f41ab6117d400d399b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponDamage: 10
   cooldown: 1
 --- !u!1 &4068204809029510643
 GameObject:
@@ -471,6 +472,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25ce84b8eee9f744d972dec58792f2e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponDamage: 20
+  cooldown: 1
 --- !u!1 &4734701836109065263
 GameObject:
   m_ObjectHideFlags: 0

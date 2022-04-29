@@ -893,13 +893,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character
       objectReference: {fileID: 0}
-    - target: {fileID: 4872712047068255047, guid: 83837ac6b74064d498a358e4d659f124, type: 3}
-      propertyPath: damage
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 5785262405767159714, guid: 83837ac6b74064d498a358e4d659f124, type: 3}
-      propertyPath: weaponDamage
-      value: 50
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83837ac6b74064d498a358e4d659f124, type: 3}

@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class DamageArea : WeaponActor
 {
-    [SerializeField] private float damage;
-
     private void OnTriggerEnter(Collider other)
     {
         #region Get Actor Data
