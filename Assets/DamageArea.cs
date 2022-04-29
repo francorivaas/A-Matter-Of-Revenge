@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DamageArea : MonoBehaviour
+public class DamageArea : WeaponActor
 {
     [SerializeField] private float damage;
 
@@ -17,7 +17,7 @@ public class DamageArea : MonoBehaviour
 
         if (actorHealth != null && actorLayerObj.layer == LayerMask.NameToLayer("Enemy"))
         {
-            actorHealth.TakeDamage(damage);
+            actorHealth.TakeDamage(weaponDamage);
             Debug.Log($"La vida de {actorHealth.name} es de {actorHealth.CurrentHealth}");
         }
     }

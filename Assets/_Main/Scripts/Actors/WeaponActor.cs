@@ -6,6 +6,7 @@ public abstract class WeaponActor : MonoBehaviour, IWeapon
 {
     protected bool canAttack;
 
+    [SerializeField] protected float weaponDamage = 10.0f;
     [SerializeField] protected float cooldown = 1.0f;
 
     protected virtual void Start()
