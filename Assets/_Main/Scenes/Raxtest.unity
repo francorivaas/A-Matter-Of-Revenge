@@ -611,6 +611,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5755464470317882125, guid: 860d91b81d1201b4b8de53a8cbcdf602, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8660254
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755464470317882125, guid: 860d91b81d1201b4b8de53a8cbcdf602, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755464470317882125, guid: 860d91b81d1201b4b8de53a8cbcdf602, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755464470317882125, guid: 860d91b81d1201b4b8de53a8cbcdf602, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 5755464470498223260, guid: 860d91b81d1201b4b8de53a8cbcdf602, type: 3}
       propertyPath: m_Name
       value: CamSystem
@@ -666,6 +682,26 @@ PrefabInstance:
     - target: {fileID: 5755464471268580256, guid: 860d91b81d1201b4b8de53a8cbcdf602, type: 3}
       propertyPath: m_Transitions.m_InheritPosition
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755464471268580259, guid: 860d91b81d1201b4b8de53a8cbcdf602, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8660254
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755464471268580259, guid: 860d91b81d1201b4b8de53a8cbcdf602, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755464471268580259, guid: 860d91b81d1201b4b8de53a8cbcdf602, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755464471268580259, guid: 860d91b81d1201b4b8de53a8cbcdf602, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755464471268580259, guid: 860d91b81d1201b4b8de53a8cbcdf602, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 860d91b81d1201b4b8de53a8cbcdf602, type: 3}

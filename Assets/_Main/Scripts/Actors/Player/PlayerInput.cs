@@ -23,8 +23,10 @@ public class PlayerInput : MonoBehaviour, iInput
     }
     public void UpdateInputs()
     {
-        _h = Input.GetAxis("Horizontal");
-        _v = Input.GetAxis("Vertical");
+        _h = Input.GetAxisRaw("Horizontal");
+        _v = Input.GetAxisRaw("Vertical");
+        // _h = Mathf.Clamp(_h,0,1);
+        // _v = Mathf.Clamp(_v,0,1);
     }
     #endregion
 }
